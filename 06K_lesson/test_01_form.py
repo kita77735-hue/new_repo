@@ -9,7 +9,6 @@ from selenium.webdriver.support import expected_conditions as EC
 def browser():
     options = webdriver.EdgeOptions()
     driver = webdriver.Edge(options=options)
-    driver.implicitly_wait(10)
     yield driver
     driver.quit()
 

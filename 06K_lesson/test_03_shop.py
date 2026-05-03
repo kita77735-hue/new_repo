@@ -9,7 +9,6 @@ from selenium.webdriver.support import expected_conditions as EC
 def browser():
     options = webdriver.FirefoxOptions()
     driver = webdriver.Firefox(options=options)
-    driver.implicitly_wait(1)
     yield driver
     driver.quit()
 
